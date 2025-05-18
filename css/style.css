@@ -331,7 +331,7 @@ grid-template-columns: repeat(5, 1fr);
 .activities__item{
 border: 1px solid black;
 border-radius: 50%;
-padding:138px 113px;
+/* padding:138px 113px; */
 aspect-ratio: 1 / 1;
 display: flex;
 justify-content: center;
@@ -519,6 +519,40 @@ background-color: #ffffff;
   transform: translateY(0%);
 }
 
+@media (max-width: 1500px){
+
+  .about__img{
+    flex-basis: 50%;
+  }
+
+  .about-img{
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 1280px){
+  .about__title{
+    margin-bottom: 20px;
+  }
+
+  .about__img{
+    align-self: flex-end;
+  }
+
+  .about__content{
+    flex-basis: 100%;
+    max-width: 100%;
+
+  }
+
+  .about__inner{
+      flex-wrap: wrap;
+  }
+
+}
+
+
 @media (max-width: 1000px){
   .menu__btn{
     display: flex;
@@ -567,8 +601,44 @@ background-color: #ffffff;
     font-size: 40px;
     padding: 70px 0;
   }
+
+  .site__images{
+    margin-bottom: 75px;
+  }
+
+  .activities__info{
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+  }
+
+  .activities__title,
+  .activities__text{
+    flex-basis: 100%;
+  }
+
+    .activities__title{
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .activities__text p{
+
+    }
 }
 
+@media (max-width: 800px){
+  .activities__list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header__bottons-book {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+}
 
 @media(max-width:480px){
 
@@ -590,5 +660,54 @@ background-color: #ffffff;
     font-size: 24px;
   }
 
-  
+ 
+  .about-img{
+    max-width: 100%;
+  }
+
+  .about__title {
+    font-size: 44px;
+    line-height: 58px;
+  }
+
+  .about__subtitle {
+      margin-bottom: 10px;
+  }
+
+  .about__list-item {
+      font-size: 19px;
+  }
+
+  .about__text {
+      margin-bottom: 20px;
+      padding-top: 20px;
+  }
+
+  .about{
+      margin-bottom: 65px;
+  }
+
+  .about__link{
+      right: 36px;
+      bottom: 46px;
+      font-size: 29px;
+      line-height: 37px;       
+  }
+
+  .activities__list {
+    grid-template-columns: repeat(2, 1fr);
 }
+
+  .site__images{
+    display: none;
+  }
+
+
+  .activities__title{
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+}
+
+  
