@@ -648,6 +648,38 @@ background-color: #ffffff;
       margin-bottom: 60px;
       margin-left: 0;
     }
+
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left,
+    .footer-logo {
+      max-width: 100%;
+    }
+  
+    .footer-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+  
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+  
 }
 
 @media (max-width: 800px){
@@ -745,6 +777,23 @@ background-color: #ffffff;
   .reviews__top{
   margin-bottom: 40px;
   }
+
+  .footer-left h2 {
+    font-size: 22px;
+  }
+
+  .footer-block h4 {
+    font-size: 14px;
+  }
+
+  .footer-block p {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+
 }
 
   
